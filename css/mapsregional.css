@@ -1,0 +1,43 @@
+#mapfr{
+	width: 610px;//871px; 
+	height: 600px;//860px;
+}
+
+#Guadeloupe{
+	width: 100px; 
+	height: 75px;
+}
+
+#Martinique{
+	width: 100px; 
+	height: 75px;
+}
+
+#Guyane{
+	width: 100px; 
+	height: 75px;
+}
+
+#Reunion{
+	width: 100px; 
+	height: 75px;
+}
+
+#Mayotte{
+	width: 100px;
+	height: 75px;
+}
+
+#Corse{
+	width: 100px; 
+	height: 117px;
+}
+
+.col-lg-push-11{
+	
+	left: 60%;
+}
+
+@media (min-width: $screen-sx-min) and (max-width: $screen-sx-max) {
+	@include responsive-invisibility('.hidden-sx');
+}

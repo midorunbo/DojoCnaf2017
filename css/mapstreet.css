@@ -1,0 +1,17 @@
+#mapworld{
+	width: 800px;//871px; 
+	height: 760px;//860px;
+}
+
+#marker {
+    background-image: url('../image/iconaf.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mapboxgl-popup {
+    max-width: 200px;
+}
