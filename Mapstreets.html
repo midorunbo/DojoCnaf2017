@@ -33,6 +33,8 @@
 		<link type="text/css" rel="stylesheet" href="css/mapstreet.css" media="all">
 		<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.js'></script>
 		<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.css' rel='stylesheet' />
+		<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v3.1.1/mapbox-gl-directions.js'></script>
+		<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v3.1.1/mapbox-gl-directions.css' type='text/css' />
 		<title>Ma Caf - Ma caf | caf.fr</title>
 	</head>
 
@@ -152,34 +154,24 @@
 
 								<div id="breadcrump">
 									<p><a href="https://www.caf.fr/" title="Accueil">Accueil</a></p>
-								</div>
-								
-								<form id="block-zipcode" method="POST" action="/ma-caf/caf-recherche">
-									<fieldset>
-										<br>
-										<p>Pour accéder aux pages locales d’une autre Caf, saisissez le code postal de votre lieu de résidence.</p>
-										<br>
-										<div class="clearfix">
-											<div class="floatleft">
-												<input class="text" name="zipcode" id="zipcode" value="Votre code postal" onfocus="if (this.value == 'Votre code postal') {this.value = '';}" 
-												onblur="if (this.value == '') {this.value = 'Votre code postal';}" tabindex="5" type="text">
-												<input class="submit" value="OK" title="OK" tabindex="6" type="submit">
-											</div>
-										</div><!--/.clearfix-->
-									</fieldset>
-								</form>
-								
+								</div>		
+								<fieldset>
+									<br>
+									<p>Pour accéder aux pages locales d’une autre Caf, saisissez le code postal de votre lieu de résidence.</p>
+									<br>
+								</fieldset>
+							
 								<div id="page-content">
 									<!-- Carte interactive -->
 	  
 									<div class= 'row'>
 										<div class= 'col-lg-6'>
-											<div id='mapworld'></div>
+											<div id='map'></div>
 										</div>
 									</div>
 													  
 									<a href='MapsRegional.html'><input type="button" value='Carte régional'></a>
-									<input type="button" value='Recherche par zone'>
+									<a href='MapsErea.html'><input type="button" value='Recherche par zone'></a>
 											
 								</div>
 							</div>

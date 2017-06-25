@@ -30,11 +30,12 @@
 		
 		
 		<!-- Cartographie -->
-		<link type="text/css" rel="stylesheet" href="css/mapsregional.css" media="all">
+		<link type="text/css" rel="stylesheet" href="css/mapserea.css" media="all">
 		<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.js'></script>
 		<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.css' rel='stylesheet' />
-		<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.1.0/mapbox-gl-geocoder.min.js'></script>
-		<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.1.0/mapbox-gl-geocoder.css' type='text/css' />
+		<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v3.0.11/turf.min.js'></script>
+		<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v0.18.0/mapbox-gl-draw.js'></script>
+		<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v0.18.0/mapbox-gl-draw.css' type='text/css'/>
 		<title>Ma Caf - Ma caf | caf.fr</title>
 	</head>
 
@@ -154,33 +155,29 @@
 
 								<div id="breadcrump">
 									<p><a href="https://www.caf.fr/" title="Accueil">Accueil</a></p>
-								</div>
-									<fieldset>
-										<br>
-										<p>Pour accéder aux pages locales d’une autre Caf, saisissez le code postal de votre lieu de résidence.</p>
-										<br>
-									</fieldset>
-
-								
+								</div>		
+								<fieldset>
+									<br>
+								</fieldset>
+							
 								<div id="page-content">
 									<!-- Carte interactive -->
 	  
 									<div class= 'row'>
-										<div class= 'col-lg-4'>
-											<div id='mapfr'></div>
-										</div>
-										<div class= 'col-lg-1 col-lg-push-11 hidden-sm hidden-xs hidden-md'>
-											<div id='Guadeloupe'></div>
-											<div id='Martinique'></div>
-											<div id='Guyane'></div>
-											<div id='Reunion'></div>
-											<div id='Mayotte'></div>
-											<div id='Corse'></div>
+										<div class= 'col-lg-6'>
+											<div id='map'></div>
+											<div class='calculation-box'>
+												<p>Dessinez un polygon .</p>
+												<div id='calculate' class='button button'>Calculer la surface dans cette zone</div>
+												<div id='calculated-area'></div>
+												<p>Taux de disponibilité :  %.</p> 
+												<p>Nombre de caf :  .</p>
+											</div>
 										</div>
 									</div>
 													  
+									<a href='MapsRegional.html'><input type="button" value='Carte régional'></a>
 									<a href='Mapstreets.html'><input type="button" value='Carte des rues'></a>
-									<a href='MapsErea.html'><input type="button" value='Recherche par zone'></a>
 											
 								</div>
 							</div>
@@ -515,6 +512,6 @@
 			<div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;">
 			</div>
 		</div>
-		<script type="text/javascript" src="js/mapsregional.js"></script>
+		<script type="text/javascript" src="js/mapsErea.js"></script>
 	</body>
 </html>

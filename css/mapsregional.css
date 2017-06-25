@@ -5,27 +5,27 @@
 
 #Guadeloupe{
 	width: 100px; 
-	height: 75px;
+	height: 100px;
 }
 
 #Martinique{
 	width: 100px; 
-	height: 75px;
+	height: 100px;
 }
 
 #Guyane{
 	width: 100px; 
-	height: 75px;
+	height: 100px;
 }
 
 #Reunion{
 	width: 100px; 
-	height: 75px;
+	height: 100px;
 }
 
 #Mayotte{
 	width: 100px;
-	height: 75px;
+	height: 100px;
 }
 
 #Corse{
@@ -37,6 +37,13 @@
 	
 	left: 60%;
 }
+
+
+.mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
 
 @media (min-width: $screen-sx-min) and (max-width: $screen-sx-max) {
 	@include responsive-invisibility('.hidden-sx');
